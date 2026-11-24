@@ -1,0 +1,58 @@
+export const dict = {
+  ar: {
+    app: 'دالي فت',
+    tagline: 'نظام خفيف وسريع لإدارة العيادة البيطرية',
+    welcome: 'أهلاً بك في عيادتك',
+    welcomeSub: 'سجّل الحيوانات، ذكّر أصحابها بالتطعيمات، واكتب الروشتة وشارك الباسبور الصحي في مكان واحد.',
+    demoNote: 'بيانات تجريبية للعرض فقط',
+    nav: { home: 'الرئيسية', reception: 'الاستقبال والتطعيمات', consult: 'الكشف والروشتة', passport: 'الباسبور الصحي' },
+    role: { reception: 'موظف الاستقبال', consult: 'الطبيب البيطري', passport: 'صفحة عامة لصاحب الحيوان' },
+    lang: 'English', themeLight: 'الوضع الفاتح', themeDark: 'الوضع الداكن',
+    stats: { pets: 'حيوانات مسجلة', due: 'تطعيمات قريبة', boarded: 'في الإقامة' },
+    reception: {
+      due: 'التطعيمات القادمة', boarding: 'الإقامة والتجميل', whatsapp: 'تذكير واتساب',
+      owner: 'المالك', due_on: 'الموعد',
+      msg: (pet, vac) => `مرحباً، نذكّركم بموعد تطعيم ${vac} لـ ${pet} في عيادة دالي فت.`,
+    },
+    status: { overdue: 'متأخر', soon: 'قريباً', ok: 'سليم', boarding: 'إقامة', grooming: 'تجميل', none: 'لا يوجد' },
+    consult: {
+      patient: 'ملخص المريض', weight: 'الوزن', species: 'النوع', exam: 'ملخص الكشف', rx: 'معاينة الروشتة',
+      next: 'حاسبة الجرعات وطباعة الروشتة تُضاف في الخطوة التالية.',
+    },
+    passport: {
+      title: 'الباسبور الصحي الرقمي', scan: 'امسح الرمز لفتح الباسبور', allergies: 'الحساسية',
+      vacc: 'التطعيمات', summaries: 'ملخصات معتمدة', emergency: 'طوارئ العيادة', next: 'الجرعة القادمة',
+      privacy: 'لا تُعرض بيانات المالك في هذه الصفحة.',
+    },
+    species: { dog: 'كلب', cat: 'قطة' }, kg: 'كجم',
+    imgFallback: 'صورة غير متاحة',
+  },
+  en: {
+    app: 'Daly Vet',
+    tagline: 'A fast, lightweight system for veterinary clinics',
+    welcome: 'Welcome to your clinic',
+    welcomeSub: 'Register pets, remind owners about vaccinations, write prescriptions and share the health passport — all in one place.',
+    demoNote: 'Demo data for preview only',
+    nav: { home: 'Home', reception: 'Reception & vaccines', consult: 'Consultation & Rx', passport: 'Health passport' },
+    role: { reception: 'Receptionist', consult: 'Veterinarian', passport: 'Public page for pet owners' },
+    lang: 'العربية', themeLight: 'Light mode', themeDark: 'Dark mode',
+    stats: { pets: 'Registered pets', due: 'Vaccines due soon', boarded: 'Currently boarded' },
+    reception: {
+      due: 'Upcoming vaccinations', boarding: 'Boarding & grooming', whatsapp: 'WhatsApp reminder',
+      owner: 'Owner', due_on: 'Due',
+      msg: (pet, vac) => `Hello, this is a reminder that ${pet} is due for the ${vac} vaccine at Daly Vet.`,
+    },
+    status: { overdue: 'Overdue', soon: 'Due soon', ok: 'Up to date', boarding: 'Boarding', grooming: 'Grooming', none: 'None' },
+    consult: {
+      patient: 'Patient summary', weight: 'Weight', species: 'Species', exam: 'Exam summary', rx: 'Prescription preview',
+      next: 'The dose helper and printable prescription arrive in the next step.',
+    },
+    passport: {
+      title: 'Digital pet health passport', scan: 'Scan the code to open the passport', allergies: 'Allergies',
+      vacc: 'Vaccinations', summaries: 'Approved summaries', emergency: 'Clinic emergency line', next: 'Next due',
+      privacy: 'Owner details are never shown on this page.',
+    },
+    species: { dog: 'Dog', cat: 'Cat' }, kg: 'kg',
+    imgFallback: 'Image unavailable',
+  },
+}

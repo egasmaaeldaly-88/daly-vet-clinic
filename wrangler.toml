@@ -1,0 +1,21 @@
+# ---------------------------------------------------------------
+# Daly Vet — Cloudflare Pages + D1 configuration
+# ---------------------------------------------------------------
+name = "daly-vet"                      # Pages project name
+compatibility_date = "2024-11-01"      # Pin the Workers runtime behaviour
+pages_build_output_dir = "dist"        # Vite build output served by Pages
+
+# D1 database binding. Functions read it as `context.env.DB`.
+# Create it once:   npx wrangler d1 create daly-vet-db
+# Then paste the printed database_id below (placeholder until then).
+[[d1_databases]]
+binding = "DB"
+database_name = "daly-vet-db"
+database_id = "REPLACE_WITH_DATABASE_ID"
+
+# Apply schema.sql:
+#   local  -> npm run db:local
+#   remote -> npm run db:remote
+#
+# Secrets (NOT stored here) — used in a later step for the clinic PIN:
+#   npx wrangler pages secret put CLINIC_PIN
